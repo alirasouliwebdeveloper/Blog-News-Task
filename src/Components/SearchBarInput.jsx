@@ -19,13 +19,24 @@ const SearchBarInput = () => {
 
   return (
     <form onSubmit={handleSubmitFormClick}>
+      <div className="mb-2 mt-2">
+        <label className="block uppercase text-gray-700 text-sm font-bold mb-2">
+          Search:
+        </label>
+      </div>
       <input
+        className="shadow appearance-none border rounded w-full py-2 px-3 mb-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         type="text"
         value={query}
         onChange={handleChangeSearchFrom}
-        placeholder="Search..."
+        placeholder="Type for search lin 'BTC'"
       />
-      <button type="submit">Search</button>
+      <button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="submit"
+      >
+        Search
+      </button>
     </form>
   );
 };

@@ -2,7 +2,7 @@ export default function CustomNav() {
   return (
     <div className="w-full">
       <h1 className="text-center text-[2rem]  p-2">Blog Task Project</h1>
-      <nav className="">
+      {/* <nav className="">
         <ul className="flex flex-row gap-4">
           <li>
             <a className="p-1" href={`/contacts/1`}>
@@ -15,8 +15,8 @@ export default function CustomNav() {
             </a>
           </li>
         </ul>
-      </nav>
-      <hr className="shadow-sm" />
+      </nav> */}
+      {/* <hr className="shadow-sm" /> */}
     </div>
   );
 }

@@ -11,7 +11,7 @@ const NewsItems = ({ articles }) => {
             className="rounded overflow-hidden shadow-lg flex flex-col"
             key={result.title}
           >
-            <a href="#"></a>
+            {/* <a href="#"></a> */}
             {result.urlToImage && (
               <div className="relative">
                 <LazyLoadImage
@@ -28,6 +28,7 @@ const NewsItems = ({ articles }) => {
               <a
                 href={result.url}
                 target="_blank"
+                rel="noreferrer"
                 className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2"
               >
                 {result.title}

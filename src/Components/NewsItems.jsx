@@ -26,7 +26,8 @@ const NewsItems = ({ articles }) => {
 
             <div className="px-6 py-4 mb-auto">
               <a
-                href="#"
+                href={result.url}
+                target="_blank"
                 className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2"
               >
                 {result.title}
